@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/mountain-race-track/scene1-night.unity
+  isLoaded: 1
+  isActive: 1
