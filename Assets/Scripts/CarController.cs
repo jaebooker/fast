@@ -1,77 +1,67 @@
-﻿//using system.collections;
-//using system.collections.generic;
-//using unityengine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-//public class CarController : monobehaviour
-//{
-//    public void getinput()
-//    {
-//        m_horizontalinput = input.getaxis("horizontal");
-//        m_verticalinput = input.getaxis("vertical");
-//    }
+public class CarController : MonoBehaviour
+{
+    public void getinput()
+    {
+        m_horizontalinput = Input.GetAxis("Horizontal");
+        m_verticalinput = Input.GetAxis("Vertical");
+    }
 
-//    private void steer()
-//    {
-//        m_steerangle = maxsteerangle * m_horizontalinput;
-//        frontdriverw.steerangle = m_steerangle;
-//        frontpassengerw.steerangle = m_steerangle;
+    private void steer()
+    {
+        m_steerangle = maxsteerangle * m_horizontalinput;
 
-//    }
+        frontdriverw.steerAngle = m_steerangle;
+        frontpassengerw.steerAngle = m_steerangle;
 
-//    private void accelerate()
-//    {
-//        frontdriverw.motortorque = m_verticalinput * motorforce;
-//        frontpassengerw.motortorque = m_verticalinput * motorforce;
-//    }
+    }
 
-//    private void updatewheelposes()
-//    {
-//        updatewheelpose(frontdriverw, frontdrivert);
-//        updatewheelpose(frontpassengerw, frontpassengert);
-//        updatewheelpose(backdriverw, backdrivert);
-//        updatewheelpose(backpassengerw, backpassengert);
-//    }
+    private void accelerate()
+    {
+        frontdriverw.motorTorque = m_verticalinput * motorforce;
+        frontpassengerw.motorTorque = m_verticalinput * motorforce;
+    }
 
-//    private void updatewheelpose(wheelcollider _collider, transform _transform)
-//    {
-//        vector3 _pos = _transform.position;
-//        quaternion _quat = _transform.rotation;
+    private void updatewheelposes()
+    {
+        updatewheelpose(frontdriverw, frontdrivert);
+        updatewheelpose(frontpassengerw, frontpassengert);
+        updatewheelpose(backdriverw, backdrivert);
+        updatewheelpose(backpassengerw, backpassengert);
+    }
 
-//        _collider.getworldpose(out _pos, out _quat);
+    private void updatewheelpose(WheelCollider _collider, Transform _transform)
+    {
+        Vector3 _pos = _transform.position;
+        Quaternion _quat = _transform.rotation;
 
-//        _transform.position = _pos;
-//        _transform.rotation = _pos;
-//    }
+        _collider.GetWorldPose(out _pos, out _quat);
 
-//    private void fixedupdate()
-//    {
-//        getinput();
-//        steer();
-//        accelerate();
-//        updatewheelposes();
+        _transform.position = _pos;
+        _transform.rotation = _quat;
+    }
 
-//    }
+    private void FixedUpdate()
+    {
+        getinput();
+        steer();
+        accelerate();
+        updatewheelposes();
 
-//    private float m_horizontalinput;
-//    private float m_verticalinput;
-//    private float m_steerangle;
+    }
 
-//    public wheelcollider frontdriverw, frontpassengerw;
-//    public wheelcollider backdriverw, backpassengerw;
-//    public transform frontdrivert, frontpassengert;
-//    public transform backdrivert, backpassengert;
-//    public float maxsteerangle = 30;
-//    public float motorforce = 50;
+    private float m_horizontalinput;
+    private float m_verticalinput;
+    private float m_steerangle;
 
-//    //start is called before the first frame update
-//   void start()
-//    {
+    public WheelCollider frontdriverw, frontpassengerw;
+    public WheelCollider backdriverw, backpassengerw;
+    public Transform frontdrivert, frontpassengert;
+    public Transform backdrivert, backpassengert;
+    public float maxsteerangle = 300;
+    public float motorforce = 500;
 
-//    }
-
-//    //update is called once per frame
-//  void update()
-//    {
-
-//    }
-//}
+}
