@@ -51,11 +51,28 @@ public class CarController : MonoBehaviour
         accelerate();
         updatewheelposes();
 
+        if ((m_verticalinput != 0) & (check == false))
+        {
+            speed.Play();
+            check = true;
+        }
+        if ((m_verticalinput == 0) & (check == true))
+        {
+            speed.Stop();
+            coolDown.Play();
+            check = false;
+        }
+
     }
 
     private float m_horizontalinput;
     private float m_verticalinput;
     private float m_steerangle;
+    private bool check = false;
+    //private bool soundCheck = false;
+
+    public AudioSource speed;
+    public AudioSource coolDown;
 
     public WheelCollider frontdriverw, frontpassengerw;
     public WheelCollider backdriverw, backpassengerw;
