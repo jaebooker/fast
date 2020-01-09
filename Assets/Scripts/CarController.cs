@@ -7,7 +7,16 @@ public class CarController : MonoBehaviour
     public void getinput()
     {
         m_horizontalinput = Input.GetAxis("Horizontal");
-        m_verticalinput = Input.GetAxis("Vertical");
+        //m_verticalinput = Input.GetAxis("Vertical");
+        if (OVRInput.Get(OVRInput.Button.One))
+        {
+            m_verticalinput = m_verticalinput + speed_increase;
+        }
+        else
+        {
+            m_verticalinput = speed_decrease;
+            speed_increase = m_verticalinput - speed_increase;
+        }
     }
 
     private void steer()
@@ -68,6 +77,8 @@ public class CarController : MonoBehaviour
     private float m_horizontalinput;
     private float m_verticalinput;
     private float m_steerangle;
+    private float speed_increase = 1;
+    private float speed_decrease = 0;
     private bool check = false;
     //private bool soundCheck = false;
 
