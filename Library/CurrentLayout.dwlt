@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 548}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -361,7 +361,7 @@ MonoBehaviour:
     x: 323
     y: 81
     width: 941
-    height: 397
+    height: 390
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &14
 MonoBehaviour:
@@ -401,20 +401,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Oculus/Avatar/Content/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Oculus/Avatar/Content/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\MakeSchool-VR\Documents\dont-follow-the-spiders\Fast
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 164}
-    m_SelectedIDs: d82d0000
-    m_LastClickedID: 11736
-    m_ExpandedIDs: 000000006e230000d8270000de2c00005c2d0000b62d00007e2f00007c3000005e330000ea330000ee33000064340000d4350000d83500009a360000803700009c3a0000ea3a0000023d0000223f000034440000d044000074460000f846000000ca9a3b
+    scrollPos: {x: 0, y: 287}
+    m_SelectedIDs: 34350000
+    m_LastClickedID: 13620
+    m_ExpandedIDs: 000000006e230000d8270000de2c00005c2d0000b62d00007e2f00007c300000de3200005e330000ea330000ee3300006434000088340000d4350000d83500009a360000803700009c3a0000ea3a0000023d0000223f000034440000d044000074460000f8460000845b00009e5b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -561,23 +561,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: aa250000
-      m_LastClickedID: 0
-      m_ExpandedIDs: b2fbffff
+      m_SelectedIDs: c8bc0000
+      m_LastClickedID: 48328
+      m_ExpandedIDs: fcbbffff0abcffff1abcffff2ebcffff52c1ffff60c1ffff70c1ffffa2c8ffff60caffff6ecaffff7ecaffff68cdffff5aceffff68ceffff78ceffff8cceffffccd0ffffdad0ffffead0ffffd4d3ffff66dcffff46ddffff54ddffff6eddffff7addffffd8dfffffe6dffffff6dfffffe0e2ffff82ebffff0cf0ffff78f1ffff86f1ffffa0f1ffffaef2ffffb2fbffff9a83000030890000789400004aa30000e0a80000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: OVRPlayerController
+        m_OriginalName: OVRPlayerController
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -8202
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -619,9 +619,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 187.02824, y: 1.6929467, z: -66.35764}
+    m_Target: {x: -0.10425065, y: 0.76508427, z: 0.85709584}
     speed: 2
-    m_Value: {x: 187.02824, y: 1.6929467, z: -66.35764}
+    m_Value: {x: -0.10425065, y: 0.76508427, z: 0.85709584}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -649,13 +649,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0, y: -0.7071068, z: 0, w: -0.7071068}
+    m_Target: {x: 0, y: -1, z: 0, w: 0}
     speed: 2
-    m_Value: {x: 0, y: -0.7071068, z: 0, w: -0.7071068}
+    m_Value: {x: 0, y: -1, z: 0, w: 0}
   m_Size:
-    m_Target: 23.501242
+    m_Target: 2.0306108
     speed: 2
-    m_Value: 23.501242
+    m_Value: 2.0306108
   m_Ortho:
     m_Target: 0
     speed: 2
