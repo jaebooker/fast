@@ -47,7 +47,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 52
+  controlID: 54
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -93,8 +93,8 @@ MonoBehaviour:
     y: 0
     width: 315
     height: 410
-  m_MinSize: {x: 202, y: 224}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 53
+  controlID: 55
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 54
+  controlID: 56
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -401,20 +401,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Oculus/Avatar/Content/Prefabs
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Oculus/Avatar/Content/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\MakeSchool-VR\Documents\dont-follow-the-spiders\Fast
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 287}
-    m_SelectedIDs: 34350000
-    m_LastClickedID: 13620
-    m_ExpandedIDs: 000000006e230000d8270000de2c00005c2d0000b62d00007e2f00007c300000de3200005e330000ea330000ee3300006434000088340000d4350000d83500009a360000803700009c3a0000ea3a0000023d0000223f000034440000d044000074460000f8460000845b00009e5b000000ca9a3b
+    scrollPos: {x: 0, y: 1104}
+    m_SelectedIDs: e42d0000
+    m_LastClickedID: 11748
+    m_ExpandedIDs: 000000006e230000d8270000e62c0000562d0000682d0000c22d0000982f00009c30000000330000803300000e340000123400008a340000b0340000fe35000002360000ca360000b0370000da3a00002c3b00004a3d0000643e00007a3f00009644000032450000da4600005e47000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -442,7 +442,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006e230000d8270000de2c00005c2d0000b62d00007e2f00007c3000005e330000ea330000ee33000064340000d4350000d83500009a360000803700009c3a0000ea3a0000023d0000223f000034440000d044000074460000f8460000
+    m_ExpandedIDs: 000000006e230000d8270000e62c0000562d0000682d0000c22d0000982f00009c30000000330000803300000e340000123400008a340000b0340000fe35000002360000ca360000b0370000da3a00002c3b00004a3d0000643e00007a3f00009644000032450000da4600005e470000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -486,7 +486,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 5}
+      m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -561,20 +561,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c8bc0000
-      m_LastClickedID: 48328
-      m_ExpandedIDs: fcbbffff0abcffff1abcffff2ebcffff52c1ffff60c1ffff70c1ffffa2c8ffff60caffff6ecaffff7ecaffff68cdffff5aceffff68ceffff78ceffff8cceffffccd0ffffdad0ffffead0ffffd4d3ffff66dcffff46ddffff54ddffff6eddffff7addffffd8dfffffe6dffffff6dfffffe0e2ffff82ebffff0cf0ffff78f1ffff86f1ffffa0f1ffffaef2ffffb2fbffff9a83000030890000789400004aa30000e0a80000
+      m_SelectedIDs: ace2ffff
+      m_LastClickedID: -7508
+      m_ExpandedIDs: 92e2ffff9ee2ffffa2e2ffffb6e2ffffa0e4fffface4ffffb0e4ffff9ae7ffffccefffffd8efffffdceffffff0efffff1cf2ffff28f2ffff16f5ffffb2fbffffa0510000806300001269000016690000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: OVRPlayerController
-        m_OriginalName: OVRPlayerController
+        m_Name: Tor11
+        m_OriginalName: Tor11
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -8202
+        m_UserData: 25472
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -619,9 +619,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.10425065, y: 0.76508427, z: 0.85709584}
+    m_Target: {x: 0.07315278, y: 1.205616, z: 0}
     speed: 2
-    m_Value: {x: -0.10425065, y: 0.76508427, z: 0.85709584}
+    m_Value: {x: 0.07315278, y: 1.205616, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -649,13 +649,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0, y: -1, z: 0, w: 0}
+    m_Target: {x: 0, y: -0.7071068, z: 0, w: -0.7071068}
     speed: 2
-    m_Value: {x: 0, y: -1, z: 0, w: 0}
+    m_Value: {x: 0, y: -0.7071068, z: 0, w: -0.7071068}
   m_Size:
-    m_Target: 2.0306108
+    m_Target: 2.7090929
     speed: 2
-    m_Value: 2.0306108
+    m_Value: 2.7090929
   m_Ortho:
     m_Target: 0
     speed: 2
